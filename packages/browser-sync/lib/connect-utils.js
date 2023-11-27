@@ -178,7 +178,6 @@ var connectUtils = {
 
         if (options.get("mode") !== "server") {
             protocol = options.get("scheme") + "://";
-            string = withHostnamePort;
         }
 
         if (options.get("mode") === "proxy" && options.getIn(["proxy", "ws"])) {
